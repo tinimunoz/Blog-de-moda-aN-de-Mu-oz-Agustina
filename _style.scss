@@ -1,0 +1,246 @@
+ /*Fondo*/
+ Body {
+    background-color: #24FFE9;
+  }
+
+/*Title*/
+
+ h2 {
+  color:#E0520E ;
+  }
+
+ h3 {
+color:rgb(218, 53, 111) ;
+  }
+
+ .important {
+     color: rgb(168, 63, 63)
+
+ }
+
+ .black {
+     color: rgb(61, 139, 150)
+ }
+
+.titulo__principal {
+    font-family: "Montserrat, Outfit";
+    font-style: normal;
+    font-weight: normal;
+    src: url (font/Montserrat\,Outfit\ \(1\)) format ("zip");
+}
+  .titulo__oficial {
+      width: 250px; 
+      height: 100px;
+      background-color: rgb(12, 19, 31);
+      width:100%;
+      height:auto;
+
+  .inicio__titulo {
+      background-color: rgb(12, 19, 31);
+      flex-direction: column;
+      justify-content: space-around;
+      position:center;
+      width: 100%;
+      display:flex;
+      align-items:center;
+    } 
+ } 
+
+
+.navbar-brand {
+    color:black;
+}
+
+/*Image*/ 
+
+.bordes-redondos {
+   border-radius: 16px  ;
+   margin-top: 10px ;
+   margin-right: 10px;
+   margin-bottom: 12px ;
+   margin-left: 15px; 
+}
+
+.conocenos { 
+   border-top: solid 5px white;
+   border-right: solid 10px white;
+   border-bottom: solid 7px white;
+   border-left: solid 12px white;
+   object-fit: cover;
+   transform: skewY(25seg);
+}
+
+.conocenos:hover {
+    height:auto; width: auto;
+    padding: 20px;
+    background-color:rgb(126, 126, 216);
+}
+
+.container__caja {
+    transform: rotateX(180deg);
+    transform: rotateY(70deg);
+    transform: rotateZ(90deg);
+    object-fit: cover;
+}
+
+
+/*Menu (index)*/
+.desplegable {
+   margin: auto;
+   width: 500px;
+   font-family: 'Times New Roman', Times, serif;
+   background-color:rgb(49, 105, 190);
+   display:inline-block;
+
+}
+
+ul { 
+   list-style: none; font-size: 0;
+   text-decoration:none;
+ 
+ul li { 
+    display: inline-block; 
+    width: 15%; position: relative; 
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration:none;
+    background-color: blanchedalmond;
+
+ul ul li {
+     display: inline-block;
+     float: none;
+     width: 150px;  
+     text-decoration: none;
+    
+    } 
+  } 
+}
+
+.nav li a:hover {
+    display: inline-block; 
+    background-color: cadetblue;
+    text-decoration:none;
+}
+
+ /*contenedor flexible (padre)*/
+ .nav__contenedor {
+    height: 300px;
+    flex-direction: row;
+    border: 1px solid rgb(126, 126, 216);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: stretch;
+    @include background-color;
+}
+
+/*contenedores hijos*/
+.nav__items {
+width:50px;
+height:50px;
+display:grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+flex-direction:row;
+}
+
+.imagen1 {
+    grid-column: 1 / span 1;
+    grid-row: 50%;
+    margin:5px;
+    float: left;
+    height: 100%;
+
+
+.image2 {
+    grid-column: 2 / span 1;
+    grid-row: 50%;
+    margin: 5px;
+    float: left;
+    height: 100%;
+
+
+
+.image3 {
+    grid-column: 1 / span 2;
+    grid-row: 50%;
+    margin: 5px;
+    float: left;
+    height: 10%0;
+
+
+.image4 {
+    grid-column: 2 / span 2;
+    grid-row: 50%;
+    margin: 5px;
+    float: left;
+    height: 100%;
+}    
+}
+}
+}
+
+
+/*carrusel*/
+    .carrusel-item {
+        color:aquamarine;
+        width:15%;
+        opacity: .5;
+        transition: opacity .15s ease;
+        }
+        {
+        @each $color in lightblue, violet 
+       
+            #(color: .carrusel-item);
+        }
+
+
+
+.section__footer {
+    background-color: rgb(12, 19, 31);
+    flex-direction: row;
+    justify-content: space-around;
+    position:fixed;
+    bottom:0;
+    align-items: center;
+    align-self:flex-end;
+    height: auto;
+    width: 100%;
+    display:flex;
+    padding:1em;
+}
+
+.pie_item_1 {
+   color:#66928e;
+   height: 50px;
+   margin-left: 50px;
+   flex-grow: 0;
+   flex-wrap: wrap;
+   padding: 0 20px;
+   display: flex;
+   align-items: center;
+
+
+.pie_item_2 {
+color:#66928e;
+height: 50px;
+margin-left: 50px;
+flex-grow: 0;
+flex-wrap: wrap;
+padding: 0 20px;
+display: flex;
+align-items:center;
+
+
+.pie_item_3 {
+color:#66928e;
+height: 50px;
+margin-left: 50px;
+flex-grow: 0;
+flex-wrap: wrap;
+padding: 0 20px;
+display: flex;
+align-items: center;
+}
+}
+}
